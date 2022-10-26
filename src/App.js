@@ -1,9 +1,7 @@
-import React, { components } from 'react';
+import React, { Components } from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import Navigation from './Navigation';
-import Home from './Pages/Home';
-import Users from './Pages/Users';
-
+import Home from './components/Home';
+import Users from './components/Users';
 import './style.css';
 
 function App() {

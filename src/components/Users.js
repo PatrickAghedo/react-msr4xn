@@ -1,6 +1,6 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './style.css';
+import React from "react";
+import Navigation from "../Navigation";
+import "../style.css";
 
 export default function Users() {
   return (

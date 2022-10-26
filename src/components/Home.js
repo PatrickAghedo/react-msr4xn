@@ -1,6 +1,6 @@
-import React from 'react';
-import Navigation from './Navigation';
-import './style.css';
+import React from "react";
+import Navigation from "../Navigation";
+import "../style.css";
 
 export default function Home() {
   return (
