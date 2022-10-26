@@ -2,21 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  overflow: hidden;
-}
-h1,
-p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
 }
 
 h1 {
@@ -27,12 +22,53 @@ h1 {
   margin: 20px 0;
 }
 
-.nav {
+.nav,
+.prev,
+.next,
+button {
   background-color: #4caf50;
   color: #fff;
   text-align: center;
-  max-width: 150px;
+  width: 100px;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
+}
+
+.pagenotfound {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news {
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.news-item {
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 250px;
+}
+.users-container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+  margin: 0 auto;
+  /* padding: 50px 20px; */
+  width: 100%;
+  border: 1px solid black;
 }
