@@ -1,7 +1,5 @@
-import React from 'react';
-
-import { useState } from 'react';
-import useFetch from '../components/useFetch';
+import { useState } from "react";
+import useFetch from "../components/useFetch";
 
 function ListOfUsers() {
   const [page, setPage] = useState(1);
@@ -32,7 +30,7 @@ function ListOfUsers() {
         {data?.results.map((each, index) => {
           const name = ` ${each.name.title} ${each.name.first} ${each.name.last}`;
           return (
-            <li key={name.toLowerCase().replaceAll(' ', '')}>{`${
+            <li key={name.toLowerCase().replaceAll(" ", "")}>{`${
               index + 1
             }.${name}`}</li>
           );
