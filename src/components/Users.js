@@ -1,8 +1,7 @@
-import React from "react";
-import List from "../page/List";
-import ListOfUsers from "../page/ListOfUsers";
-import Navigation from "./Navigation";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import React from 'react';
+
+import Navigation from './Navigation';
+import { Link, Outlet } from 'react-router-dom';
 
 function Users() {
   return (
@@ -21,12 +20,9 @@ function Users() {
           <Link className="bar2" to="ListOfUsers">
             List Of Users
           </Link>
-        </div> <br/>
+        </div>{' '}
+        <br />
         <Outlet />
-        <Routes>
-          <Route path="List" element={<List />} />
-          <Route path="ListOfUsers" element={<ListOfUsers />} />
-        </Routes>
       </section>
     </section>
   );
